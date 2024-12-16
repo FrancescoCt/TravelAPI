@@ -10,7 +10,7 @@
   <a target="_blank" href="https://github.com/FrancescoCt/TravelAPI"><img src="https://img.shields.io/github/last-commit/francescoct/travelapi?logo=github&color=609966&logoColor=fff" alt="Last commit"/></a>
 </p>
 <div align="center">
-  <img src="https://github.com/FrancescoCt/TravelAPI/blob/master/src/img/travelapi.png" alt="Light Theme" width="100%"/>
+  <img src="https://github.com/FrancescoCt/TravelAPI/blob/master/travelapi.png" alt="Light Theme" width="100%"/>
 </div>
 <br/><br/>
 
