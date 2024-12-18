@@ -1,3 +1,5 @@
+--Creazione database
+CREATE DATABASE IF NOT EXISTS travelapi;
 -- Creazione tabelle
 CREATE TABLE IF NOT EXISTS Paesi (
     Id INT AUTO_INCREMENT PRIMARY KEY,
