@@ -1,34 +1,4 @@
 RewriteEngine On
-
-#Paesi
-# createPaese (C)
-RewriteRule ^api/paesi/create/$ api/paesiController/createPaese.php [QSA,L]
-# getPaesi (R)
-RewriteRule ^api/paesi$ api/paesiController/getPaesi.php [QSA,L]
-RewriteRule ^api/paesi/$ api/paesiController/getPaesi.php [QSA,L]
-# getPaese (R)
-RewriteRule ^api/paesi/([0-9]+)$ api/paesiController/getPaese.php?id=$1 [QSA,L] 
-# updatePaese (U)
-RewriteRule ^api/paesi/update/([0-9]+)$ api/paesiController/updatePaese.php [QSA,L]
-# deletePaese (D)
-RewriteRule ^api/paesi/delete/([0-9]+)$ api/paesiController/deletePaese.php?id=$1 [QSA,L]
-
-#Viaggi
-# createViaggio (C)
-RewriteRule ^api/viaggi/create/$ api/viaggiController/createViaggio.php [QSA,L]
-RewriteRule ^api/viaggi/create/addPaese$ api/viaggiController/addPaeseViaggio.php [QSA,L]
-# getViaggi (R)
-RewriteRule ^api/viaggi$ api/viaggiController/getViaggi.php [QSA,L]
-RewriteRule ^api/viaggi/$ api/viaggiController/getViaggi.php [QSA,L]
-# getTableViaggi (R)
-RewriteRule ^api/viaggi/table$ api/viaggiController/getTableViaggi.php [QSA,L]
-# getTableViaggio (R)
-RewriteRule ^api/viaggi/table/([0-9]+)$ api/viaggiController/getTableViaggio.php?id=$1 [QSA,L]
-# getViaggio (R)
-RewriteRule ^api/viaggi/([0-9]+)$ api/viaggiController/getViaggio.php?id=$1 [QSA,L] 
-# updateViaggio (U)
-RewriteRule ^api/viaggi/update/table/([0-9]+)$ api/viaggiController/updateTableViaggio.php [QSA,L]
-RewriteRule ^api/viaggi/update/([0-9]+)$ api/viaggiController/updatePaeseViaggio.php [QSA,L]
-# deleteViaggio (D)
-RewriteRule ^api/viaggi/delete/([0-9]+)$ api/viaggiController/deleteViaggio.php?id=$1 [QSA,L]
-RewriteRule ^api/viaggi/delete/paese/([0-9]+)$ api/viaggiController/deletePaeseViaggio.php?id=$1 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/(.*)$ api/index.php [QSA,L]

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viaggi Forms</title>
+    <title>Travels Forms</title>
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -17,10 +17,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Viaggi Forms <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Travels Forms <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="PaeseForms.html">Paesi Forms</a>
+                    <a class="nav-link" href="CountryForms.html">Country Forms</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">API Helper</a>
@@ -33,32 +33,32 @@
     </nav>
     <!-- Titolo -->
     <div class="container mt-5">
-        <h1 class="mb-4 text-center">Viaggio Forms</h1>
+        <h1 class="mb-4 text-center">Travel Forms</h1>
 
         <!-- Form 1 -->
         <form id="form1" class="justify-content-center m-5 border border-primary rounded p-3">
             <div class="form-group mr-2">
-                <label for="input1" class="mr-2">Posti disponibili:</label>
+                <label for="input1" class="mr-2">Available seats:</label>
                 <input type="text" id="input1" name="input1" class="form-control" placeholder="5">
-                <small id="createHelp" class="form-text text-muted text-center ">Inserisci il numero dei posti disponibili del nuovo Viaggio da salvare in DB</small>
+                <small id="createHelp" class="form-text text-muted text-center ">Write the number of available seats of the new Travel to be saved in DB</small>
             </div>
-            <button type="submit" class="btn btn-success">Create Viaggio</button>
+            <button type="submit" class="btn btn-success">Create Travel</button>
             
         </form>
         <div id="message1" class="mt-3"></div>
 
         <form id="form1a" class="justify-content-center m-5 border border-primary rounded p-3">
             <div class="form-group mr-2">
-                <label for="input1a" class="mr-2">Codice Viaggio:</label>
+                <label for="input1a" class="mr-2">Id Travel:</label>
                 <input type="text" id="input1a" name="input1a" class="form-control" placeholder="5">
-                <small id="createHelp" class="form-text text-muted text-center ">Inserisci l'id Viaggio</small>
+                <small id="createHelp" class="form-text text-muted text-center ">Write Travel id</small>
 
-                <label for="input1b" class="mr-2">Paese:</label>
+                <label for="input1b" class="mr-2">Country:</label>
                 <input type="text" id="input1b" name="input1b" class="form-control" placeholder="5">
-                <small id="createHelp" class="form-text text-muted text-center ">Inserisci l'id del Paese da associare al Viaggio</small>
+                <small id="createHelp" class="form-text text-muted text-center ">Write the id of the Country to be associated to travel</small>
 
             </div>
-            <button type="submit" class="btn btn-success">Add Paese Viaggio</button>
+            <button type="submit" class="btn btn-success">Add Country to Travel</button>
             
         </form>
         <div id="message1a" class="mt-3"></div>
@@ -66,32 +66,32 @@
         <!-- Form 2 -->
         <form id="form2a" class="justify-content-center m-5 border border-primary rounded p-3">
             <div class="form-group mr-2">
-                <label for="input2a" class="mr-2">Id Viaggio:</label>
+                <label for="input2a" class="mr-2">Id Travel:</label>
                 <input type="text" id="input2a" name="input2a" class="form-control" placeholder="2">
 
-                <label for="input2b" class="mr-2">Posti disponibili Viaggio:</label>
+                <label for="input2b" class="mr-2">Available seats Travel:</label>
                 <input type="text" id="input2b" name="input2b" class="form-control" placeholder="8">
-                <small id="updateHelp" class="form-text text-muted text-center ">Inserisci l'id e il numero Posti disponibili del Viaggio esistente da salvare in DB</small>
+                <small id="updateHelp" class="form-text text-muted text-center ">Write the id and the available seats of the existing travel to be saved in DB</small>
         
             </div>
-            <button type="submit" class="btn btn-warning">Update Viaggio</button>
+            <button type="submit" class="btn btn-warning">Update Travel</button>
         </form>
         <div id="message2a" class="mt-3"></div>
 
         <form id="form2b" class="justify-content-center m-5 border border-primary rounded p-3">
             <div class="form-group mr-2">
-                <label for="input2ba" class="mr-2">Id Viaggio:</label>
+                <label for="input2ba" class="mr-2">Id Travel:</label>
                 <input type="text" id="input2ba" name="input2ba" class="form-control" placeholder="2">
 
-                <label for="input2bb" class="mr-2">Id Paese Old:</label>
+                <label for="input2bb" class="mr-2">Id Country Old:</label>
                 <input type="text" id="input2bb" name="input2bb" class="form-control" placeholder="8">
 
-                <label for="input2bc" class="mr-2">Id Paese New:</label>
+                <label for="input2bc" class="mr-2">Id Country New:</label>
                 <input type="text" id="input2bc" name="input2bc" class="form-control" placeholder="8">
-                <small id="updateHelp" class="form-text text-muted text-center ">Inserisci l'id del Viaggio, l'id del Paese da cambiare e l'id del Paese nuovo</small>
+                <small id="updateHelp" class="form-text text-muted text-center ">Write the travel id, the id of the country to change and the id of the new country</small>
         
             </div>
-            <button type="submit" class="btn btn-warning">Update Paese Viaggio</button>
+            <button type="submit" class="btn btn-warning">Update Country travel</button>
         </form>
         <div id="message2b" class="mt-3"></div>
         
@@ -99,36 +99,37 @@
         <!-- Form 3 -->
         <form id="form3" class="justify-content-center m-5 border border-primary rounded p-3">
             <div class="form-group mr-2">
-                <label for="input3" class="mr-2">Id Viaggio:</label>
+                <label for="input3" class="mr-2">Id travel:</label>
                 <input type="text" id="input3" name="input3" class="form-control" placeholder="2">
-                <small id="deleteHelp" class="form-text text-muted text-center ">Inserisci l'id del Viaggio esistente da eliminare dal DB</small>
+                <small id="deleteHelp" class="form-text text-muted text-center ">Write the existing travel id to delete from DB</small>
             </div>
-            <button type="submit" class="btn btn-danger">Delete Viaggio</button>
+            <button type="submit" class="btn btn-danger">Delete travel</button>
         </form>
         <div id="message3" class="mt-3"></div>
 
         <form id="form3a" class="justify-content-center m-5 border border-primary rounded p-3">
             <div class="form-group mr-2">
-                <label for="input3a" class="mr-2">Id Viaggio:</label>
+                <label for="input3a" class="mr-2">Id travel:</label>
                 <input type="text" id="input3a" name="input3a" class="form-control" placeholder="2">
 
-                <label for="input3b" class="mr-2">Id Paese:</label>
+                <label for="input3b" class="mr-2">Id Country:</label>
                 <input type="text" id="input3b" name="input3b" class="form-control" placeholder="2">
-                <small class="form-text text-muted text-center ">Inserisci l'id del Viaggio esistente e il Paese da eliminare</small>
+                <small class="form-text text-muted text-center ">Write the existing travel id and the country to be deleted</small>
             </div>
-            <button type="submit" class="btn btn-danger">Delete Paese Viaggio</button>
+            <button type="submit" class="btn btn-danger">Delete Country travel</button>
         </form>
         <div id="message3a" class="mt-3"></div>
 
         <!-- Form 4 -->
         <form id="form4" class="justify-content-center m-5 border border-primary rounded p-3">
             <div class="form-group mr-2">
-                <span class="form-text text-muted text-center ">Vedi tutti i Viaggi salvati in db</span>
+                <span class="form-text text-muted text-center ">Show all Traveld saved in db</span>
             </div>
-            <a href="http://localhost:9000/travelapi/api/viaggi/" class="btn btn-primary" target="_blank">Get Viaggi</a>
-            <a href="http://localhost:9000/travelapi/api/viaggi/table" class="btn btn-primary" target="_blank">Get Table Viaggi</a>
-            <a href="http://localhost:9000/travelapi/api/viaggi/?nome_paese=Italia" class="btn btn-primary" target="_blank">Get Viaggi Italia</a>
-            <a href="http://localhost:9000/travelapi/api/viaggi/?nome_paese=Italia&posti_disponibili=2" class="btn btn-primary" target="_blank">Get Viaggi Italia e Posti Disponibili 2</a>
+            <a href="http://localhost:9000/travelapi/api/travels/" class="btn btn-primary" target="_blank">Get Travels</a>
+            <!-- Da creare funzioni -->
+            <a href="http://localhost:9000/travelapi/api/travels/details" class="btn btn-primary" target="_blank">Get Travels Details</a>
+            <a href="http://localhost:9000/travelapi/api/travels/details/?country_name=Germany" class="btn btn-primary" target="_blank">Get Travels Germany</a>
+            <a href="http://localhost:9000/travelapi/api/travels/details/?country_name=Germany&&available_seats=1" class="btn btn-primary" target="_blank">Get Travels Germany and Available Seats 2</a>
         </form>
         
     </div>
@@ -144,26 +145,26 @@
             event.preventDefault();
             const input1 = document.getElementById('input1').value;
             const messageDiv = document.getElementById('message1');
-            fetch('http://localhost:9000/travelapi/api/viaggi/create/', {
+            fetch('http://localhost:9000/travelapi/api/travels/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ posti_disponibili: input1 })
+                body: JSON.stringify({ available_seats: input1 })
             })
             .then(response => response.json())
-            .then(data => {console.log('Risposta Form 1:', data)
-                if(data.message == "viaggio created.") {
+            .then(data => {console.log('Response Form 1:', data)
+                if(data.message == "Travel created.") {
                     messageDiv.textContent = data.message;
                     messageDiv.className = 'alert alert-success';
                 }
                 else{
-                    messageDiv.textContent = 'Errore nella creazione';
+                    messageDiv.textContent = 'Error creation';
                     messageDiv.className = 'alert alert-danger';
                 }
             })
-            .catch(error => {console.error('Errore Form 1:', error)
-                messageDiv.textContent = 'Errore nella creazione';
+            .catch(error => {console.error('Error Form 1:', error)
+                messageDiv.textContent = 'Error creation';
                 messageDiv.className = 'alert alert-danger';
             });
         });
@@ -174,26 +175,26 @@
             const input1b = document.getElementById('input1b').value;
             const messageDiv = document.getElementById('message1a');
 
-            fetch('http://localhost:9000/travelapi/api/viaggi/create/addPaese', {
+            fetch('http://localhost:9000/travelapi/api/travels/addCountry', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ viaggio_id: input1a, paese_id: input1b })
+                body: JSON.stringify({ travel_id: input1a, country_id: input1b })
             })
             .then(response => response.json())
-            .then(data => {console.log('Risposta Form 1a:', data)
-                if(data.message == "viaggio created.") {
+            .then(data => {console.log('Response Form 1a:', data)
+                if(data.message == 'Country added to travel.') {
                     messageDiv.textContent = data.message;
                     messageDiv.className = 'alert alert-success';
                 }
                 else{
-                    messageDiv.textContent = 'Errore nella creazione';
+                    messageDiv.textContent = 'Error creation';
                     messageDiv.className = 'alert alert-danger';
                 }
             })
-            .catch(error => {console.error('Errore Form 1a:', error)
-                messageDiv.textContent = 'Errore nella creazione';
+            .catch(error => {console.error('Error Form 1a:', error)
+                messageDiv.textContent = 'Error creation';
                 messageDiv.className = 'alert alert-danger';
             });
         });
@@ -203,26 +204,26 @@
             const input2a = document.getElementById('input2a').value;
             const input2b = document.getElementById('input2b').value;
             const messageDiv = document.getElementById('message2a');
-            fetch('http://localhost:9000/travelapi/api/viaggi/update/table/'+input2a, {
-                method: 'POST',
+            fetch('http://localhost:9000/travelapi/api/travels/'+input2a, {
+                method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ id: input2a, posti_disponibili: input2b })
+                body: JSON.stringify({ id: input2a, available_seats: input2b })
             })
             .then(response => response.json())
-            .then(data => {console.log('Risposta Form 2a:', data)
-                if(data.message == "viaggio updated.") {
+            .then(data => {console.log('Response Form 2a:', data)
+                if(data.message == "Travel updated.") {
                     messageDiv.textContent = data.message;
                     messageDiv.className = 'alert alert-success';
                 }
                 else{
-                    messageDiv.textContent = 'Errore nella update';
+                    messageDiv.textContent = 'Error update';
                     messageDiv.className = 'alert alert-danger';
                 }
             })
-            .catch(error => {console.error('Errore Form 2a:', error)
-                messageDiv.textContent = 'Errore nella update';
+            .catch(error => {console.error('Error Form 2a:', error)
+                messageDiv.textContent = 'Error update';
                 messageDiv.className = 'alert alert-danger';
             });
         });
@@ -233,26 +234,26 @@
             const input2bb = document.getElementById('input2bb').value;
             const input2bc = document.getElementById('input2bc').value;
             const messageDiv = document.getElementById('message2b');
-            fetch('http://localhost:9000/travelapi/api/viaggi/update/'+input2ba, {
-                method: 'POST',
+            fetch('http://localhost:9000/travelapi/api/travels/updateCountry', {
+                method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ viaggio_id: input2ba, id: input2bb, paese_id: input2bc })
+                body: JSON.stringify({ travel_id: input2ba, old_country_id: input2bb, new_country_id: input2bc })
             })
             .then(response => response.json())
-            .then(data => {console.log('Risposta Form 2b:', data)
-                if(data.message == "paese del viaggio updated.") {
+            .then(data => {console.log('Response Form 2b:', data)
+                if(data.message == "Country updated for travel.") {
                     messageDiv.textContent = data.message;
                     messageDiv.className = 'alert alert-success';
                 }
                 else{
-                    messageDiv.textContent = 'Errore nella update';
+                    messageDiv.textContent = 'Error update';
                     messageDiv.className = 'alert alert-danger';
                 }
             })
-            .catch(error => {console.error('Errore Form 2b:', error)
-                messageDiv.textContent = 'Errore nella update';
+            .catch(error => {console.error('Error Form 2b:', error)
+                messageDiv.textContent = 'Error update';
                 messageDiv.className = 'alert alert-danger';
             });
         });
@@ -262,7 +263,7 @@
             event.preventDefault();
             const input3 = document.getElementById('input3').value;
             const messageDiv = document.getElementById('message3');
-            fetch('http://localhost:9000/travelapi/api/viaggi/delete/'+input3, {
+            fetch('http://localhost:9000/travelapi/api/travels/'+input3, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'
@@ -270,18 +271,18 @@
                 body: JSON.stringify({ id: input3 })
             })
             .then(response => response.json())
-            .then(data => {console.log('Risposta Form 3:', data)
-                if(data.message == "viaggio deleted.") {
+            .then(data => {console.log('Response Form 3:', data)
+                if(data.message == "Travel deleted.") {
                     messageDiv.textContent = data.message;
                     messageDiv.className = 'alert alert-success';
                 }
                 else{
-                    messageDiv.textContent = 'Errore nella delete';
+                    messageDiv.textContent = 'Error delete';
                     messageDiv.className = 'alert alert-danger';
                 }
             })
-            .catch(error => {console.error('Errore Form 3:', error)
-                messageDiv.textContent = 'Errore nella delete';
+            .catch(error => {console.error('Error Form 3:', error)
+                messageDiv.textContent = 'Error delete';
                 messageDiv.className = 'alert alert-danger';
             });
         });
@@ -291,26 +292,26 @@
             const input3a = document.getElementById('input3a').value;
             const input3b = document.getElementById('input3b').value;
             const messageDiv = document.getElementById('message3a');
-            fetch('http://localhost:9000/travelapi/api/viaggi/delete/paese/'+input3a, {
+            fetch('http://localhost:9000/travelapi/api/travels/removeCountry/', {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ viaggio_id: input3a, paese_id: input3b })
+                body: JSON.stringify({ travel_id: input3a, country_id: input3b })
             })
             .then(response => response.json())
-            .then(data => {console.log('Risposta Form 3a:', data)
-                if(data.message == "paese del viaggio deleted.") {
+            .then(data => {console.log('Response Form 3a:', data)
+                if(data.message == "Country removed from travel.") {
                     messageDiv.textContent = data.message;
                     messageDiv.className = 'alert alert-success';
                 }
                 else{
-                    messageDiv.textContent = 'Errore nella delete';
+                    messageDiv.textContent = 'Error delete';
                     messageDiv.className = 'alert alert-danger';
                 }
             })
-            .catch(error => {console.error('Errore Form 3a:', error)
-                messageDiv.textContent = 'Errore nella delete';
+            .catch(error => {console.error('Error Form 3a:', error)
+                messageDiv.textContent = 'Error delete';
                 messageDiv.className = 'alert alert-danger';
             });
         });
